@@ -1,0 +1,418 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/****HEADER/PARALAX***/
+header{
+  position: relative;
+  z-index: -1;
+}
+
+.intro-text{
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  transform: translate(-20%, -50%);
+  font-family: sans-serif;
+}
+.intro-name h1{
+  font-size: 60px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.intro-line-2 h3{
+  font-size: 35px;
+  color: white;
+}
+
+.chair{
+  height: 700px;
+  position: absolute;
+  top: 90%;
+  right: 10%;
+  transform: translate(-10%, -90%);
+}
+
+.big-rose{
+  position: absolute;
+  height: 200px;
+  top: 10%;
+  right: 40%;
+}
+
+.small-rose{
+  height: 100px;
+  position: absolute;
+  top: 30%;
+  right: 10%;
+}
+/*******SECTION BACKGROUND COLORS*********/
+#section-one{
+  background-color: rgb(29, 29, 36);
+}
+header{
+  background-color:rgb(29, 29, 36);
+}
+#social-section{
+  background-image: url("http://taylorkmho.com/assets/images/bg-vignette.jpg"); 
+}
+
+/***********SECTION ONE***/
+#section-one {
+  min-height: 100vh;
+  color: rgb(57, 156, 180);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: sans-serif;
+}
+
+#section-one h2{
+  font-size: 25px;
+  margin-left: 10px;
+  width: 80%;
+  line-height: 40px;
+  
+}
+  /**font-size: 25px;
+  margin-left: 10px;
+  width: 50%;
+  line-height: 40px;
+}**/
+/*******************SOCIAL SECTION**************/
+#social-section{
+  min-height: 50vh;
+  color: rgb(39, 63, 87);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 50px;
+  font-family: sans-serif;
+  
+}
+#social-section h2{
+  width: 50%;
+  font-size: 30px;
+  line-height: 50px;
+}
+#social-section h3{
+font-size: 60px; 
+}
+/**************SOCIAL SECTION EXPIENCE*******/
+#social-section-about{
+  min-height: 100vh;
+  color: black;
+  font-size: 50px;
+  font-family: sans-serif;
+  
+}
+#section-one-about{
+  min-height: 60vh;
+  color: #834d4d;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: rgb(29, 29, 36);
+  padding: 10px;
+  font-family: sans-serif;
+}
+/************SKILLS EXPERIENCE SECTION**********/
+#skills{
+  min-height: 100vh;
+  color: lightslategrey;
+  font-size: 20px;
+  font-family: sans-serif;
+  background-color: rgb(29, 29, 36);
+ 
+}
+.design,
+.tools{
+  box-sizing: border-box;
+ padding: 20px;
+ text-decoration: none;
+}
+#skills h2{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.about-li{
+  float: right;
+  width: 50%;
+  box-sizing: border-box;
+  
+  padding: 5px;
+  list-style-type: none;
+}
+.skills-category{
+  float: left;
+}
+
+.about-li{
+  display: inline;
+}
+#links-section-about{
+  min-height: 100vh;
+  color: rgb(29, 29, 36);
+  justify-content: center;
+  font-size: 40px;
+  font-family: sans-serif;
+  background-image: url("http://taylorkmho.com/assets/images/bg-vignette.jpg");
+  display: flex;
+  flex-direction: column;
+}
+#links-section h2{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+/*PHOTOS*/
+.skills-img-grid-row{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: center;
+}
+.skills-imgs{
+  padding: 20px;
+}
+/*********COMMUNITY SERVICE SECTION*******/
+#community-service{
+  min-height: 100vh;
+  font-size: 20px;
+  font-family: sans-serif;
+  background-color:rgb(29, 29, 36);
+  line-height: 70px;
+}
+#community-service a{
+  color: rgb(57, 156, 180);
+}
+#community-service a:hover{
+  color: red;
+  transition: 2.5s;
+  cursor: pointer;
+}
+#community-service h2{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: rgb(57, 156, 180);
+}
+
+.volunteer-category,
+#community-service p{
+  margin-left: 10px;
+  color: rgb(57, 156, 180);
+}
+.volunteer-category{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.skills-imgs{
+  filter: blue;
+}
+
+/******LINK SECTION*********/
+#links-section{
+  min-height: 100vh;
+  color: #834d4d;
+  justify-content: center;
+  font-size: 40px;
+  font-family: sans-serif;
+  background-color: rgb(29, 29, 36);
+  display: flex;
+  flex-direction: column;
+}
+/*************FOOTER****/
+footer{
+  background-color: rgb(29, 29, 36)
+}
+footer p{
+  color: white;
+  font-family: sans-serif;
+  padding: 10px;
+  font-size: 12px;
+}
+/**********BUTTONS**********/
+.contact-button,
+.btn{
+  font-family: sans-serif;
+  font-size: 30px;
+  cursor: pointer;
+  background-color: Transparent;
+  border: none;
+  overflow: hidden;
+}
+.contact-button{
+  color: rgb(39, 63, 87);
+}
+.contact-button:hover{
+  color: white;
+  transition: 0.8s;
+}
+.btn{
+  justify-content: center;
+  align-content: center; 
+  padding: 30px;
+  transition: all 0.5s;
+  color: lightskyblue;
+}
+.btn span{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s; 
+}
+.btn:hover span {
+  padding-right: 25px;
+}
+.btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/*NAV STUFF*************************************/ 
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color:rgb(29, 29, 36);
+  min-height: 8vh;
+  font-family: 'Roboto Condensed', sans-serif;
+ 
+}
+.logo{
+color: rgb(226, 226, 226);
+text-transform: uppercase;
+letter-spacing: 5px;
+font-size: 12px;
+font-family: 'Roboto Condensed', sans-serif;
+}
+
+/**BURGER BUTTON**/
+.burger{
+  display: none;
+  cursor: pointer;
+}
+
+.burger div{
+  width: 25px;
+  height: 3px;
+  background-color: rgb(226, 226, 226);
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+/******MEDIA Q*******/
+@media screen and (max-width: 1024px){
+  .nav-links{
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  body{
+    overflow-x: hidden;
+  }
+  .nav-links{
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: rgb(29, 29, 36);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%); /**MOVE CONTAINER OFF THE SCREEN**/
+    transition: transform 0.5s ease-in;
+  }
+  
+  .burger{
+    display: block;
+  }
+ 
+  .intro-text{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    transform: translate(-20%, -50%);
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  #social-section h2{
+    width: 80%;
+    font-size: 25px;
+    line-height: 50px;
+    margin-left: 10px;
+  }
+  #social-section .contact-button{
+    margin-right: 20px;
+  }
+
+}
+
+/***NAV ANIMATION**/
+@keyframes navLinkFade{
+  from{
+    opacity: 0;
+    transform: translateX(50px)
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1{
+transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2{
+  opacity: 0;
+}
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px,-6px);
+}
+
+.nav-active{
+  transform: translateX(0%);
+}
+
+
+/**NAV STYLES**/
+.nav-links{
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  text-decoration: none;
+}
+  
+.nav-links li{
+  list-style: none;
+    
+}
+.nav-links a{
+  color: rgb(226, 226, 226);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 16px;
+}
+  
