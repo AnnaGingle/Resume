@@ -326,10 +326,14 @@ footer p {
   background-color: Transparent;
   border: none;
   overflow: hidden;
+
 }
 
 .contact-button {
   color: rgb(39, 63, 87);
+  text-decoration: none;
+
+
 }
 
 .contact-button:hover {
@@ -410,7 +414,7 @@ nav {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   body {
     overflow-x: hidden;
   }
