@@ -54,7 +54,7 @@ header {
 
 /*******SECTION BACKGROUND COLORS*********/
 #section-one {
-  background-color: rgb(29, 29, 36);
+  background-color: rgb(226, 226, 226);
 }
 
 header {
@@ -145,14 +145,14 @@ h3 {
   justify-content: center;
   align-items: center;
   display: flex;
-  background-color: rgb(29, 29, 36);
+  background-color: rgb(226, 226, 226);
 
   font-family: 'Roboto Condensed', sans-serif;
 }
 
 #section-two-about p {
   margin-top: 5px;
-  margin-bottom: 170px;
+  margin-bottom: 5px;
   margin-left: 40px;
   line-height: 60px;
   padding: 30px;
@@ -209,7 +209,7 @@ h3 {
 
 #links-section-about {
   min-height: 100vh;
-  color: rgb(29, 29, 36);
+  color: rgb(226, 226, 226);
   justify-content: center;
   font-size: 40px;
   font-family: 'Roboto Condensed', sans-serif;
@@ -241,8 +241,9 @@ h3 {
   min-height: 100vh;
   font-size: 20px;
   font-family: sans-serif;
-  background-color: rgb(29, 29, 36);
-  line-height: 70px;
+  background-color: rgb(226, 226, 226);
+  line-height: 40px;
+
 }
 
 #community-service a {
@@ -267,12 +268,12 @@ h3 {
   word-spacing: 6px;
   justify-content: center;
   align-content: center;
-  padding: 10px;
+
 }
 
 .volunteer-category,
 #community-service p {
-  margin-left: 10px;
+  margin-left: 30px;
   color: rgb(77, 145, 161);
   font-family: 'Roboto Condensed', sans-serif;
 }
@@ -288,6 +289,7 @@ h3 {
 
 .vtxt {
   margin-left: 30px;
+  margin-right: 20px;
   color: rgb(21, 95, 114);
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 15px;
@@ -301,7 +303,7 @@ h3 {
   justify-content: center;
   font-size: 40px;
   font-family: 'Roboto Condensed', sans-serif;
-  background-color: rgb(29, 29, 36);
+  background-color: rgb(226, 226, 226);
   display: flex;
   flex-direction: column;
 }
@@ -314,7 +316,7 @@ footer {
 footer p {
   color: white;
   font-family: sans-serif;
-  padding: 10px;
+  padding: 20px;
   font-size: 12px;
 }
 
@@ -512,4 +514,101 @@ nav {
   letter-spacing: 3px;
   font-weight: bold;
   font-size: 16px;
+}
+
+/**BORDER**/
+#top,
+#bottom,
+#left,
+#right {
+  position: fixed;
+  background: rgb(29, 29, 36);
+}
+
+#left,
+#right {
+  top: 0;
+  bottom: 0;
+  width: 20px;
+}
+
+#left {
+  left: 0;
+}
+
+#right {
+  right: 0;
+}
+
+#top,
+#bottom {
+  left: 0;
+  right: 0;
+  height: 20px;
+}
+
+#top {
+  top: 0;
+}
+
+#bottom {
+  bottom: 0;
+}
+
+@media
+/* Fairly small screens including iphones */
+only screen and (max-width: 500px),
+
+/* iPads */
+only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+  #top,
+  #bottom,
+  #left,
+  #right {
+    display: none;
+  }
+}
+
+/***boxes*/
+.boxes {
+  margin: 40px;
+  background-color: rgb(68, 68, 68);
+  /* Needed for IEs */
+
+  -moz-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+  -webkit-box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+  box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3, MakeShadow=true, ShadowOpacity=0.30);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+  zoom: 1;
+}
+
+.boxes .content {
+  position: relative;
+  /* This protects the inner element from being blurred */
+  padding: 60px;
+  background-color: #DDD;
+
+}
+
+/**Projects**/
+#projects {
+  background-color: rgb(226, 226, 226);
+  margin-left: 20px;
+}
+
+#projects a {
+  text-decoration: none;
+  color: rgb(39, 63, 87);
+  font-size: 40px;
+}
+
+.project-year {
+  color: grey;
+}
+
+#projects a:hover {
+  color: red;
 }

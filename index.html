@@ -13,6 +13,9 @@
 <html lang="en">
 
 <head>
+    <!--[if lte IE 6]>
+	<style>#top, #bottom, #left, #right { display: none; }</style>
+    <![endif]-->
     <meta charset="utf-8">
     <title>Anna Gingle</title>
     <link rel="stylesheet" media="screen" href="styles.css">
@@ -75,22 +78,13 @@
         </button>
     </section>
 
-    <section id="links-section">
-        <!--insta-->
-        <button class="btn btn-success" onclick=" window.open('#','_blank')"><span>Instagram</span></button>
-        <br>
-        <!--LinkedIn-->
-        <button class="btn btn-success" onclick=" window.open('#','_blank')"><span>Linkedin</span></button>
-        <br>
-        <!--Instagram-->
-        <button class="btn btn-success"
-            onclick=" window.open('https://app.joinhandshake.com/users/2744767','_blank')"><span>Handshake</span></button>
-        <br>
-        <!--GitHub-->
-        <button class="btn btn-success"
-            onclick=" window.open('https://github.com/AnnaGingle','_blank')"><span>Github</span></button>
-    </section>
 
+    <!--Border-->
+    <div id="left"></div>
+    <div id="right"></div>
+    <div id="top"></div>
+    <div id="bottom"></div>
+    <!--Footer-->
     <footer>
         <p>© 2018-2019 Anna Gingle, respective clients and agencies</p>
     </footer>
