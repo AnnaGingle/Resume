@@ -135,12 +135,9 @@ h3 {
 
 #section-two-experience {
   min-height: 80vh;
-  display: block;
-  background-color: white;
-  width: 50%;
-  font-family: 'Roboto Condensed', sans-serif;
-  line-height: 45px;
-  width: 50%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 0px;
 }
 
 #section-two-experience p {
@@ -159,7 +156,7 @@ h3 {
 }
 
 /************SKILLS EXPERIENCE SECTION**********/
-#skills {
+/*#skills {
   min-height: 60vh;
   color: rgb(77, 145, 161);
   font-size: 20px;
@@ -167,11 +164,33 @@ h3 {
   padding: 20px;
   margin-bottom: 70px;
   margin-top: 70px;
+}*/
 
-
+#skills {
+  display: flex;
+  margin-bottom: 60px;
 }
 
+#skills h1 {
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-size: 45px;
+}
 
+.rectangle-skills {
+  width: 50%;
+  height: auto;
+  justify-content: center;
+  text-align: center;
+}
+
+#skills-software,
+#skills-programming,
+#skills-design {
+  width: 80%;
+  height: auto;
+}
 
 .design,
 .tools {
@@ -420,7 +439,26 @@ deskt .intro-text {
     display: none;
   }
 
+  .nav-links a {
+    color: white;
+  }
 
+  #skills {
+    display: block;
+
+  }
+
+  #skills h1 {
+    font-size: 27px;
+  }
+
+  .rectangle-skills {
+    width: 50%;
+    height: auto;
+    margin-left: 120px;
+    justify-content: center;
+    justify-items: center;
+  }
 
   .content {
     display: flex;
@@ -451,12 +489,17 @@ deskt .intro-text {
 
 
   #aboutme-banner {
-    width: 100%;
+    width: 70%;
     height: auto;
     display: block;
     padding: 10px;
     align-items: center;
     margin: auto;
+
+  }
+
+  #section-two-experience {
+    min-height: 60vh;
   }
 
   .nav-links {
@@ -464,7 +507,7 @@ deskt .intro-text {
     right: 0px;
     height: 92vh;
     top: 8vh;
-    background-color: rgb(29, 29, 36);
+    background-color: rgb(117, 114, 114);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -596,7 +639,7 @@ deskt .intro-text {
 }
 
 .nav-links a {
-  color: black;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   letter-spacing: 3px;
   font-weight: bold;
@@ -720,7 +763,30 @@ content a {
 
 }
 
+#github {}
 
+.github {
+  justify-content: center;
+  display: block;
+  width: 50%;
+  height: auto;
+  margin: auto;
+  font-family: "calistoga";
+  font-size: 58px;
+  line-height: 60px;
+  text-align: center;
+  padding: 40px;
+}
+
+.github a {
+  text-decoration: underline;
+  color: black;
+}
+
+.github a:hover {
+  color: red;
+  transition: 2s;
+}
 
 
 
@@ -914,8 +980,16 @@ body {
 }
 
 .experience-1 {
-  border-image: ;
+
   padding: 10px;
   margin-left: 20px;
   margin-top: 5px
+}
+
+#aboutme-header {
+  width: 100%;
+  height: auto;
+  display: block;
+  align-items: center;
+  margin: auto;
 }
