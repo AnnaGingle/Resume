@@ -38,12 +38,6 @@
   right: 10%;
 }
 
-/*******SECTION BACKGROUND COLORS*********/
-#section-one {
-  background-color: white;
-
-}
-
 header {
   background-color: rgb(29, 29, 36);
 }
@@ -54,13 +48,16 @@ header {
 
 /***********SECTION ONE***/
 #section-one {
-  min-height: 40vh;
+  background-color: white;
+
+  min-height: 50vh;
   margin-top: 0px;
   display: flex;
   font-family: 'Roboto Condensed', sans-serif;
 }
 
 #section-one h2 {
+
   font-size: 20px;
   margin-left: 100px;
   width: 70%;
@@ -76,11 +73,7 @@ h3 {
   display: flex;
 }
 
-#community-service h3 {
-  color: rgb(29, 29, 36);
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 30px;
-}
+
 
 #projects h3 {
   color: rgb(29, 29, 36);
@@ -138,25 +131,27 @@ h3 {
 
 
 
-#section-two-about {
-  color: rgb(29, 29, 36);
-  justify-content: center;
-  align-items: center;
-  display: flex;
+
+
+#section-two-experience {
+  min-height: 80vh;
+  display: block;
   background-color: white;
-  width: 70%;
+  width: 50%;
   font-family: 'Roboto Condensed', sans-serif;
+  line-height: 45px;
+  width: 50%;
 }
 
-#section-two-about p {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  margin-left: 40px;
-  line-height: 60px;
-  padding: 30px;
-  justify-content: center;
-  margin-right: 40px;
-  font-size: 20px;
+#section-two-experience p {
+  margin-left: 15px;
+}
+
+
+
+.location {
+  color: rgb(94, 92, 92);
+  font-size: 15px;
 }
 
 #section-one-about img {
@@ -165,13 +160,18 @@ h3 {
 
 /************SKILLS EXPERIENCE SECTION**********/
 #skills {
-  min-height: 100vh;
+  min-height: 60vh;
   color: rgb(77, 145, 161);
   font-size: 20px;
   font-family: 'Roboto Condensed', sans-serif;
-  background-color: rgb(29, 29, 36);
+  padding: 20px;
+  margin-bottom: 70px;
+  margin-top: 70px;
+
 
 }
+
+
 
 .design,
 .tools {
@@ -236,13 +236,8 @@ h3 {
 
 /*********COMMUNITY SERVICE SECTION*******/
 #community-service {
-  min-height: 100vh;
-  font-size: 20px;
-  font-family: sans-serif;
-  background-color: white;
-  line-height: 40px;
-  padding: 10px;
-
+  display: block;
+  padding: 20px;
 }
 
 
@@ -257,12 +252,6 @@ h3 {
   cursor: pointer;
 }
 
-#community-service h2 {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  color: rgb(57, 156, 180);
-}
 
 .about-me {
   letter-spacing: 2px;
@@ -272,48 +261,39 @@ h3 {
 
 }
 
-.volunteer-category,
-#community-service p {
-  margin-left: 30px;
-  color: rgb(29, 29, 36);
-  font-family: 'Roboto Condensed', sans-serif;
+.v-location {
+  color: gray;
+  margin-left: 20px;
+
 }
 
-.volunteer-category {
-  text-transform: uppercase;
-  font-weight: bold;
+.content2 p {
+  margin-left: 20px;
+  margin-top: 5px;
 }
+
+
+
 
 .skills-imgs {
   filter: blue;
 }
 
-.vtxt {
-  color: rgb(29, 29, 36);
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 15px;
-  padding: 10px;
-}
+
+
+
+
 
 /******LINK SECTION*********/
-#links-section {
-  min-height: 100vh;
-  color: #834d4d;
-  justify-content: center;
-  font-size: 40px;
-  font-family: 'Roboto Condensed', sans-serif;
-  background-color: rgb(226, 226, 226);
-  display: flex;
-  flex-direction: column;
-}
+
 
 /*************FOOTER****/
 footer {
-  background-color: rgb(29, 29, 36);
+  background-color: #feeee7;
 }
 
 footer p {
-  color: white;
+  color: black;
   font-family: sans-serif;
   padding: 20px;
   font-size: 12px;
@@ -381,12 +361,12 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: rgb(29, 29, 36);
+  background-color: #feeee7;
   min-height: 8vh;
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-.intro-text {
+deskt .intro-text {
   display: none;
 }
 
@@ -404,7 +384,7 @@ nav {
 .burger div {
   width: 25px;
   height: 3px;
-  background-color: rgb(226, 226, 226);
+  background-color: rgb(0, 0, 0);
   margin: 5px;
   transition: all 0.3s ease;
 }
@@ -413,14 +393,16 @@ nav {
   display: none;
 }
 
+.intro-text {
+  display: none;
+}
+
 /******MEDIA Q*******/
+/*MOBILE*/
 @media screen and (max-width: 1024px) {
   .nav-links {
     width: 60%;
   }
-
-
-
 
 }
 
@@ -438,25 +420,44 @@ nav {
     display: none;
   }
 
-  #anna-art {
-    margin-top: 0px;
-    margin-left: 0px;
-    justify-content: center;
-  }
 
-  .mobile-anna {
-    display: block;
-  }
 
-  .desktop-intro-2 {
-    display: none;
-  }
-
-  .mobile-intro-2 {
+  .content {
     display: flex;
+    padding: 20px;
+    border: 1px, black;
+    justify-content: center;
+    justify-items: center;
+    font-family: 'Roboto Condensed';
+    margin-bottom: 40px;
+  }
+
+  content a {
+    font-size: 70px;
+    width: 20%;
+    height: auto;
+  }
+
+  .content p {
+    width: 80%;
+    height: auto;
+    line-height: 50px;
+  }
+
+  #skillspsd {
+    width: 100%;
+    height: auto;
   }
 
 
+  #aboutme-banner {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 10px;
+    align-items: center;
+    margin: auto;
+  }
 
   .nav-links {
     position: absolute;
@@ -492,6 +493,7 @@ nav {
   }
 
   .intro-text {
+    z-index: -1;
     display: block;
     margin-right: 5px;
     position: absolute;
@@ -510,19 +512,40 @@ nav {
     font-size: 30px;
   }
 
-  #social-section h2 {
-    width: 100%;
-    font-size: 25px;
-    line-height: 50px;
-    margin-left: 10px;
-  }
-
-  #social-section .contact-button {
-    margin-right: 20px;
-  }
 
 
 
+
+}
+
+#myBtn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 50px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: 3px;
+  /* Remove outline */
+  background-color: rgba(0, 0, 0, 0.74);
+  /* Set a background color */
+  color: rgb(255, 250, 250);
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+  border-radius: 19px;
+  /* Rounded corners */
+  font-size: 50px;
+  /* Increase font size */
+  font-family: 'Ubuntu', sans-serif;
 }
 
 /***NAV ANIMATION**/
@@ -559,9 +582,12 @@ nav {
 /**NAV STYLES**/
 .nav-links {
   display: flex;
+
+
   justify-content: space-around;
   width: 30%;
   text-decoration: none;
+
 }
 
 .nav-links li {
@@ -570,11 +596,12 @@ nav {
 }
 
 .nav-links a {
-  color: rgb(226, 226, 226);
+  color: black;
   text-decoration: none;
   letter-spacing: 3px;
   font-weight: bold;
   font-size: 15px;
+
 }
 
 /**BORDER**/
@@ -584,7 +611,7 @@ nav {
 #right {
   position: fixed;
   z-index: 100;
-  background: rgb(29, 29, 36);
+  background: #feeee7;
 }
 
 #left,
@@ -635,46 +662,105 @@ only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
 }
 
 /***boxes*/
-.boxes {
-  margin: 40px;
-  -moz-box-shadow: inset 0 0 10px #a06f6f;
-  -webkit-box-shadow: inset 0 0 10px #000000;
-  box-shadow: inset 0 0 10px;
-  z-index: -100;
-  display: flex;
-  background-color: white;
-}
-
-.boxes .content {
-  position: relative;
-  /* This protects the inner element from being blurred */
-  padding: 40px;
-  display: flex;
-}
-
-.project-descriptions {
+.content2 {
   padding: 20px;
-  margin-left: 20px;
-  color: rgb(29, 29, 36);
-  font-size: 16;
+  border: 1px, black;
+  justify-content: center;
+  justify-items: center;
+  font-family: 'Roboto Condensed';
+  margin-bottom: 40px;
+  width: 80%;
+  height: auto;
+
+}
+
+.vtxt {
+  line-height: 40px;
+}
+
+.content {
+  display: flex;
+  padding: 20px;
+  border: 1px, black;
+  justify-content: center;
+  justify-items: center;
+  font-family: 'Roboto Condensed';
+  margin-bottom: 40px;
+}
+
+content a {
+  font-size: 70px;
+  width: 30%;
+  height: auto;
+  padding: 20px;
+}
+
+.content p {
+  width: 40%;
+  height: auto;
+  margin-left: 90px;
+  line-height: 40px;
 }
 
 
 
 .event-info {
-  color: rgb(29, 29, 36);
+  font-size: 30px;
+  justify-content: space-around;
+  margin-left: 20px;
+
 }
+
+
+
 
 /**Projects**/
 #projects {
   background-color: white;
-  margin-left: 20px;
-  padding: 10px;
 
 }
 
+
+
+
+
+.Statistics {
+  font-size: 50px;
+  font-family: "Montserrat";
+  color: rgb(31, 31, 35);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: justifyAll;
+  text-align: center;
+  margin-bottom: -3px;
+  z-index: 3;
+  background-image: url(images/Rectangle\ 1.gif);
+  background-repeat: repeat-x;
+  background-position: 100% 100%;
+  padding-bottom: 10px;
+  width: 50%;
+  height: auto;
+  margin: auto;
+
+}
+
+
+
+
+.Statistics h1 {
+  border-width: 30%;
+  border-color: rgb(254, 249, 243);
+  border-style: solid;
+  background-color: rgb(254, 238, 231);
+  z-index: 2;
+}
+
+
+
+
 #projects a {
-  text-decoration: none;
+  text-decoration: underline;
   color: rgb(39, 63, 87);
   font-size: 40px;
 
@@ -687,6 +773,11 @@ only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
 #projects a:hover {
   color: red;
   transition: 2.5s;
+}
+
+.desktop-intro-2 {
+  margin: 30px;
+  margin-left: 20px;
 }
 
 /**DESKTOP HEADER***/
@@ -726,7 +817,7 @@ only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   font-family: kremlin-pro-expanded, sans-serif;
   font-weight: 500;
   font-style: normal;
-  color: rgb(226, 226, 226);
+  color: black;
 }
 
 .desktop-intro h3 {
@@ -757,6 +848,10 @@ only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   z-index: -1;
 }
 
+.desktop-intro-2 {
+  display: block;
+}
+
 body {
   background-color: white;
 }
@@ -774,4 +869,53 @@ body {
   z-index: -1;
   margin-left: 20px;
   text-decoration-line: underline;
+}
+
+#skillspsd {
+  width: 30%;
+  height: auto;
+  display: block;
+  padding: 10px;
+  margin: auto;
+
+}
+
+#skillspsd-info {
+  width: 80%;
+  height: auto;
+  display: block;
+  padding: 10px;
+  margin: auto;
+}
+
+#project-banner {
+  width: 30%;
+  height: auto;
+  display: block;
+  padding: 10px;
+  margin: auto;
+}
+
+#vwork-banner {
+  width: 30%;
+  height: auto;
+  display: block;
+  padding: 10px;
+  margin: auto;
+}
+
+#aboutme-banner {
+  width: 50%;
+  height: auto;
+  display: block;
+  padding: 10px;
+  align-items: center;
+  margin: auto;
+}
+
+.experience-1 {
+  border-image: ;
+  padding: 10px;
+  margin-left: 20px;
+  margin-top: 5px
 }
